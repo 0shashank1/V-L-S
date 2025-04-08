@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+#player1, #player2 {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 380px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+input[type="button"] {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #3a738e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: hsl(199, 42%, 29%);
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#gameBoard input[type="button"] {
+  font-size: 24px;
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  height: 80px;
+  width: 80px;
+}
+
+.gameMessage {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+  height: 30px;
+}
+
+#reset {
+  margin-top: 20px;
+}
+
+#reset input[type="button"] {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#reset input[type="button"]:hover {
+  background-color: #c5303d;
+}
+
+.color-picker-container {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+
+label {
+  margin-top: 10px;
+  font-size: 16px;
+  display: block;
+}
+
+input[type="color"] {
+  margin-bottom: 20px;
+  width: 60px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
