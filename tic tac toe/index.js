@@ -175,7 +175,7 @@ const displayController = function () {
       freezeGame = false;
       document.querySelector('.gameMessage').innerHTML = '';
       renderGame();
-    });
+    });  //end of addResetBtn
 
     resetBtn.append(inputBtn);
   };

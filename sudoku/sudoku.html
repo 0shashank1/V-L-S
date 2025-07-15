@@ -96,7 +96,6 @@
     var tds = document.getElementsByTagName("td");
     for (var i = 0; i < tds.length; i++) {
       currentCell = cells.shift();
-      console.log(currentCell)
       if (validNum.test(currentCell)) {
         tds[i].innerText = currentCell;
       }

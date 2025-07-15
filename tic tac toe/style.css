@@ -97,6 +97,10 @@ input[type="button"]:hover {
   color: #333;
 }
 
+#flexii{
+  display: flex;
+  text-align: center;
+}
 
 label {
   margin-top: 10px;

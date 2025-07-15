@@ -1,4 +1,3 @@
-//to be completed by student
 function isSafe(board, sr, sc, val) {
     for (var row = 0; row < 9; row++) {
         if (board[row][sc] == val) {
@@ -26,7 +25,6 @@ function isSafe(board, sr, sc, val) {
     return true;
 }
 
-//to be completed by student
 function solveSudokuHelper(board, sr, sc) {
     console.log("1234")
     if (sr == 9){
